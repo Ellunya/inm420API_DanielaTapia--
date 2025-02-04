@@ -297,8 +297,12 @@ footer {
         height: 2em;
     }
 
+    header {
+        justify-content: space-between;
+    }
+
     header > div {
-        width: 60%;
+        width: 40%;
         margin-left: 2em;
     }
 
@@ -313,6 +317,7 @@ footer {
         justify-content: space-between;
         gap: 2vw;
         font-weight: 700;
+        margin-right: 2em;
     }
 
     /* Fake burger menu for mobile */
