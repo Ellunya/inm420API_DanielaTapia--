@@ -64,6 +64,7 @@ header>nav {
     color: rgb(36, 37, 104);
  }
 
+
 /* Fake burger menu for mobile*/
 #burgerMenu {
     width: 3em;
@@ -244,7 +245,7 @@ footer {
     justify-content: center;
     padding-top: 1em;
 }
-
+/*footer item containers*/
 #footerContainer {
     width: 100%;
     height: 90%;
@@ -263,7 +264,7 @@ footer {
     flex-direction: column;
     gap: 1em;
 }
-
+/* footer links text*/
 #footerNav>a {
     font-family: "Inter", serif;
     font-weight: 400;
@@ -347,19 +348,6 @@ footer {
         max-width: 490px;
     }
 
-    #fakead {
-        position: absolute;
-        float: left;
-        width: 18%;
-        max-width: 200px;
-        height: 90%;
-        max-height: 700px;
-        background-color: #db261d;
-        margin: 5em 0 0 2em;
-        background-image: url(../images/meriam-ad.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
 
     /* label text*/
     label {
@@ -395,5 +383,22 @@ footer {
         padding: 0% 0% 0 30%;
     }
 
+
+}
+/* extra little aside for web view*/
+@media only screen and (min-width: 950px) {
+    #fakead {
+        position: absolute;
+        float: left;
+        width: 18%;
+        max-width: 200px;
+        height: 90%;
+        max-height: 700px;
+        background-color: #db261d;
+        margin: 5em 0 0 2em;
+        background-image: url(../images/meriam-ad.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 
 }
