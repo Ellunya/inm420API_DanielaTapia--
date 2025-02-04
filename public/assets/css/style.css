@@ -2,18 +2,13 @@
 /*
   font-family: "Inter", serif;
     font-family: "Voces", serif;
-
-
-
-
 */
 body {
-
     height: 100vh;
     font-family: "Inter", serif;
 }
 
-/*main area = form and extras*/
+/* Main area = form and extras */
 main {
     background-color: rgb(235, 234, 241);
     padding-bottom: 20%;
@@ -26,19 +21,18 @@ header {
     align-items: center;
     background-color: #F1F6F9;
     color: #14274E;
-    border-bottom: #9BA4B4 0.2em solid;
-
+    border-bottom: 0.2em solid #9BA4B4;
 }
 
-header>div {
+header > div {
     width: 89%;
     height: auto;
     display: flex;
     align-items: center;
 }
 
-/*text logo font Wordwise*/
-header>div>p {
+/* Text logo font - Wordwise */
+header > div > p {
     width: 60%;
     font-size: 3.3vh;
     font-weight: bold;
@@ -48,24 +42,24 @@ header>div>p {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
 }
 
-header>div>p>span {
+header > div > p > span {
     color: #2051b3;
 }
 
-/* desktop nav*/
-header>nav {
+/* Desktop navigation */
+header > nav {
     display: none;
     justify-content: space-between;
     gap: 4vw;
 }
-/* nav link colours*/
- header>nav>a {
+
+/* Nav link colors */
+header > nav > a {
     text-decoration: none;
     color: rgb(36, 37, 104);
- }
+}
 
-
-/* Fake burger menu for mobile*/
+/* Fake burger menu for mobile */
 #burgerMenu {
     width: 3em;
     height: 3.8em;
@@ -73,11 +67,12 @@ header>nav {
     background-size: contain;
 }
 
-/*dont display web logo*/
+/* Hide web logo */
 #logo {
     display: none;
 }
 
+/* Hero section */
 #hero {
     height: 50vh;
     background-image: url(../images/hero-bg-2.png);
@@ -88,36 +83,31 @@ header>nav {
     align-items: center;
     justify-content: center;
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.253) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: 
+        rgba(0, 0, 0, 0.253) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-
-#hero>article {
+#hero > article {
     width: 80%;
     border-radius: 3em;
 }
 
-#hero>article>h1 {
+#hero > article > h1 {
     font-size: 2.7em;
     font-weight: bold;
-    text-justify: auto;
     text-align: center;
-
 }
-
 
 #herotxt {
     font-size: 1.5em;
     font-weight: 400;
-    text-justify: auto;
     text-align: center;
     margin-top: 1em;
-
 }
 
-
-
-/*API part*/
+/* API section */
 #apiContainer {
     display: flex;
     justify-content: center;
@@ -125,37 +115,35 @@ header>nav {
     flex-wrap: wrap;
 }
 
-/* the small form section*/
+/* Small form section */
 #wordForm {
     padding: 2em;
     width: 70vw;
     height: 10vh;
-    /* Maximum width */
-    max-width: 800px;
-    max-height: 600px;
-    /* Maximum height */
+    max-width: 800px; /* Maximum width */
+    max-height: 600px; /* Maximum height */
     text-align: center;
-
 }
 
-/* label text*/
+/* Hide labels */
 label {
     display: none;
 }
 
-/*text input*/
+/* Text input */
 #wordInput {
     width: 85%;
     max-width: 500px;
     height: 50%;
     border-radius: 2em;
-    padding: 0% 10% 0 5%;
+    padding: 0 10% 0 5%;
     border: 2px solid #4b87ff;
-    box-shadow: rgba(150, 153, 155, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-
+    box-shadow: 
+        rgba(150, 153, 155, 0.48) 6px 2px 16px 0px, 
+        rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
-/*inline text*/
+/* Inline text */
 input::placeholder {
     font-size: 120%;
     text-align: left;
@@ -165,10 +153,9 @@ input::placeholder {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom 0% left 100%;
-
 }
 
-/*submit button*/
+/* Submit button */
 #submitBtn {
     width: 6em;
     height: 50%;
@@ -180,41 +167,41 @@ input::placeholder {
     font-family: "Inter", serif;
     font-weight: 700;
     border-radius: 1em;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+    box-shadow: 
+        rgba(17, 12, 46, 0.15) 0px 48px 100px 0px, 
+        rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-/*Dictionary results box*/
+/* Dictionary results box */
 #result {
     display: flex;
     flex-direction: column;
     align-items: left;
     width: 80vw;
     height: 40vh;
-    max-width: 500px;
-    /* Maximum width */
-    max-height: 600px;
-    /* Maximum height */
-    background-color: rgb(255, 255, 255);
-    border: #0e51d638 2px solid;
+    max-width: 500px; /* Maximum width */
+    max-height: 600px; /* Maximum height */
+    background-color: white;
+    border: 2px solid #0e51d638;
     border-radius: 0.8em;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+    box-shadow: 
+        rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-/*definiton title font*/
+/* Definition title */
 #wrdTitle {
     color: #1e2b46;
     text-transform: uppercase;
     font-size: 1.7em;
     font-weight: 600;
-    margin: 1.5em 1em 0em 1.1em;
-
-
+    margin: 1.5em 1em 0 1.1em;
 }
 
-/* word definiton!*/
+/* Word definition */
 #wrdDef {
     color: rgb(41, 41, 41);
     max-width: 80%;
@@ -224,20 +211,20 @@ input::placeholder {
     margin: 1em 2em;
 }
 
-/* add period to definition ending!*/
+/* Add period to definition ending */
 #wrdDef:after {
     content: ".";
 }
 
-/*definition:*/
-#wrdDef>span {
+/* Highlighted definition */
+#wrdDef > span {
     color: #2051b3;
     font-size: 1.5em;
     font-weight: 500;
     line-height: 2em;
 }
 
-/*footer*/
+/* Footer */
 footer {
     height: 20vh;
     background-color: #3d48ac;
@@ -245,7 +232,8 @@ footer {
     justify-content: center;
     padding-top: 1em;
 }
-/*footer item containers*/
+
+/* Footer item containers */
 #footerContainer {
     width: 100%;
     height: 90%;
@@ -254,7 +242,7 @@ footer {
     justify-content: center;
 }
 
-/* nav links */
+/* Footer navigation */
 #footerNav {
     display: flex;
     width: 50%;
@@ -264,17 +252,19 @@ footer {
     flex-direction: column;
     gap: 1em;
 }
-/* footer links text*/
-#footerNav>a {
+
+/* Footer links */
+#footerNav > a {
     font-family: "Inter", serif;
     font-weight: 400;
     font-size: 0.7em;
-    color: rgb(255, 255, 255);
+    color: white;
     letter-spacing: 0.2em;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.44);
     text-decoration: none;
 }
 
+/* Social media section */
 #socials {
     width: 40%;
     height: 80%;
@@ -289,103 +279,98 @@ footer {
     height: 2.4em;
 }
 
+/* Footer bottom */
 #footer2 {
     height: 2vh;
-    background-color:#3842a3;
+    background-color: #3842a3;
     font-size: 0.6em;
-    text-decoration: none;
     color: white;
 }
 
+
 @media only screen and (min-width: 768px) {
 
-    /*book logo*/
+    /* Book logo */
     #logo {
         display: flex;
         width: 3.4em;
         height: 2em;
     }
 
-    header>div {
+    header > div {
         width: 60%;
     }
 
-    /*text logo*/
-    header>div>p {
+    /* Text logo */
+    header > div > p {
         margin: 0 0 0 1em;
     }
 
-    /* desktop nav*/
-    header>nav {
+    /* Desktop navigation */
+    header > nav {
         display: flex;
         justify-content: space-between;
         gap: 2vw;
         font-weight: 700;
     }
 
-    /* Fake burger menu for mobile*/
+    /* Fake burger menu for mobile */
     #burgerMenu {
         display: none;
     }
 
-
+    /* Hero section */
     #hero {
         height: 80vh;
     }
 
-    /*API part*/
+    /* API section */
     #apiContainer {
         flex-direction: column;
         padding-top: 10em;
     }
 
-    /* the small form section*/
+    /* Small form section */
     #wordForm {
         padding: 2em;
         width: 70vw;
         height: 10vh;
-        /* Maximum width */
-        max-width: 490px;
+        max-width: 490px; /* Maximum width */
     }
 
-
-    /* label text*/
+    /* Hide labels */
     label {
         display: none;
     }
 
-    /*text input*/
-
-    /*definiton title font*/
+    /* Definition title */
     #wrdTitle {
         color: #1e2b46;
         text-transform: uppercase;
         font-size: 1.7em;
         font-weight: 600;
-        margin: 1.5em 1em 0em 1.1em;
-
-
+        margin: 1.5em 1em 0 1.1em;
     }
 
-    /* nav links */
+    /* Footer navigation links */
     #footerNav {
         display: flex;
         width: 50%;
         justify-content: space-between;
-        align-items: left;
+        align-items: flex-start;
         flex-wrap: wrap;
         flex-direction: column;
         gap: 1em;
     }
 
+    /* Social media section */
     #socials {
         width: 10%;
-        padding: 0% 0% 0 30%;
+        padding: 0 0 0 30%;
     }
-
-
 }
-/* extra little aside for web view*/
+
+/* Extra section for web view */
 @media only screen and (min-width: 950px) {
     #fakead {
         position: absolute;
@@ -400,5 +385,4 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
     }
-
 }
