@@ -61,8 +61,8 @@ header > nav > a {
 
 /* Fake burger menu for mobile */
 #burgerMenu {
-    width: 3em;
-    height: 3.8em;
+    width: 2.5em;
+    height: 3em;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -266,10 +266,10 @@ footer {
 
 /* Social media section */
 #socials {
-    width: 40%;
+    width: 35%;
     height: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -299,6 +299,7 @@ footer {
 
     header > div {
         width: 60%;
+        margin-left: 2em;
     }
 
     /* Text logo */
