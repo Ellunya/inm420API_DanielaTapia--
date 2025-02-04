@@ -1,0 +1,547 @@
+/*fonts*/
+/*
+  font-family: "Inter", serif;
+    font-family: "Voces", serif;
+
+
+
+
+*/
+body {
+
+    height: 100vh;
+    font-family: "Inter", serif;
+}
+
+/*main area = form and extras*/
+main {
+    background-color: rgb(235, 234, 241);
+    padding-bottom: 20%;
+}
+
+header {
+    height: 9vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F1F6F9;
+    color: #14274E;
+    border-bottom: #9BA4B4 0.2em solid;
+
+}
+
+header > div {
+    width: 89%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*text logo font Wordwise*/
+header > div > p {
+    width: 60%;
+    font-size: 3.3vh;
+    font-weight: bold;
+    margin: 0 10% 0 5%;
+    text-align: left;
+    font-family: "Voces", serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
+}
+
+header > div>p > span {
+    color: #2051b3;
+}
+
+/* desktop nav*/
+header>nav {
+    display: none;
+    justify-content: space-between;
+    gap: 4vw;
+}
+
+/* Fake burger menu for mobile*/
+#burgerMenu {
+    width: 3em;
+    height: 3.8em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/*desktop logo*/
+.logo {
+    display: none;
+    width: 4em;
+    height: 4em;
+    background-image: url(/assets/images/book-logo-blk-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 0.1em top 1em;
+}
+
+#hero {
+    height: 50vh;
+    background-image: url(../images/hero-bg-2.png);
+    filter: saturate(170%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+#hero>article {
+    width: 80%;
+    border-radius: 3em;
+}
+
+#hero>article>h1 {
+    font-size: 2.7em;
+    font-weight: bold;
+    text-justify: auto;
+    text-align: center;
+
+}
+
+
+#herotxt {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-justify: auto;
+    text-align: center;
+    margin-top: 1em;
+
+}
+
+
+
+
+
+
+
+
+
+/*API part*/
+#apiContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* the small form section*/
+#wordForm {
+    padding: 2em;
+    width: 70vw;
+    height: 10vh;
+    /* Maximum width */
+    max-width: 800px;
+    max-height: 600px;
+    /* Maximum height */
+    text-align: center;
+    
+}
+/* label text*/
+label {
+display: none;
+}
+/*text input*/
+#wordInput {
+    width: 85%;
+    max-width: 500px;
+    height:50%;  
+    border-radius: 2em;
+    padding: 0% 10% 0 5%;
+    border: 2px solid #4b87ff;
+    box-shadow: rgba(150, 153, 155, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    
+}
+/*inline text*/
+input::placeholder {
+    font-size: 120%;
+    text-align: left;
+    font-weight: 600;
+    color:#5071b4;
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom 0% left 100%;
+    
+}
+/*submit button*/
+#submitBtn{
+    width: 6em;
+    height: 50%;
+    background-color: #2051b3;
+    color: white;
+    border: none;
+    margin-top: 0.7em;
+    font-size: 1.4em;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    border-radius: 1em;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+/*Dictionary results box*/
+#result {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 80vw;
+    height: 40vh;
+    max-width: 500px;
+    /* Maximum width */
+    max-height: 600px;
+    /* Maximum height */
+    background-color: rgb(255, 255, 255);
+    border:#0e51d638 2px solid;
+    border-radius: 0.8em;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+/*definiton title font*/
+#wrdTitle {
+    color: #1e2b46;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin: 1.5em 1em 0em 1.1em;
+    
+    
+}
+/* word definiton!*/
+#wrdDef {
+    color: rgb(41, 41, 41);
+    max-width: 80%;
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 1.4em;
+    margin: 1em 2em;
+}
+/* add period to definition ending!*/
+#wrdDef:after {
+    content: ".";
+ }
+/*definition:*/
+#wrdDef > span {
+    color: #2051b3;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+/*footer*/
+footer {
+    height: 20vh;
+    background-color: #3d48ac;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+#footerContainer {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav links */
+#footerNav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: left;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#footerNav > a {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 0.7em;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2em;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.44);
+    text-decoration: none;
+}
+
+#socials {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.socialImg {
+    width:  2.4em;
+    height: 2.4em;
+}
+
+@media only screen and (min-width: 768px) {
+    /*book logo*/
+    #logo {
+        display: flex;
+        width: 3em;
+        height: 2em;
+    }
+
+    
+    header > div {
+        width: 72%;
+    }
+    
+    /*text logo font Wordwise*/
+    header > div > p {
+        width: 60%;
+        font-size: 3.3vh;
+        font-weight: bold;
+        margin: 0 10% 0 5%;
+        text-align: left;
+        font-family: "Voces", serif;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
+    }
+    
+    header > div>p > span {
+        color: #2051b3;
+    }
+    
+    /* desktop nav*/
+    header>nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 1vw;
+    }
+    
+    /* Fake burger menu for mobile*/
+    #burgerMenu {
+        display: none;
+    }
+    
+    /*desktop logo*/
+    .logo {
+        display: none;
+        width: 4em;
+        height: 4em;
+        background-image: url(/assets/images/book-logo-blk-1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left 0.1em top 1em;
+    }
+    
+    #hero {
+        height: 50vh;
+        background-image: url(../images/hero-bg-2.png);
+        filter: saturate(170%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.253) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    
+    
+    #hero>article {
+        width: 80%;
+        border-radius: 3em;
+    }
+    
+    #hero>article>h1 {
+        font-size: 2.7em;
+        font-weight: bold;
+        text-justify: auto;
+        text-align: center;
+    
+    }
+    
+    
+    #herotxt {
+        font-size: 1.5em;
+        font-weight: 400;
+        text-justify: auto;
+        text-align: center;
+        margin-top: 1em;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*API part*/
+    #apiContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    /* the small form section*/
+    #wordForm {
+        padding: 2em;
+        width: 70vw;
+        height: 10vh;
+        /* Maximum width */
+        max-width: 800px;
+        max-height: 600px;
+        /* Maximum height */
+        text-align: center;
+        
+    }
+    /* label text*/
+    label {
+    display: none;
+    }
+    /*text input*/
+    #wordInput {
+        width: 85%;
+        max-width: 500px;
+        height:50%;  
+        border-radius: 2em;
+        padding: 0% 10% 0 5%;
+        border: 2px solid #4b87ff;
+        box-shadow: rgba(150, 153, 155, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        
+    }
+    /*inline text*/
+    input::placeholder {
+        font-size: 120%;
+        text-align: left;
+        font-weight: 600;
+        color:#5071b4;
+        background-image: url(../images/search-icon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom 0% left 100%;
+        
+    }
+    /*submit button*/
+    #submitBtn{
+        width: 6em;
+        height: 50%;
+        background-color: #2051b3;
+        color: white;
+        border: none;
+        margin-top: 0.7em;
+        font-size: 1.4em;
+        font-family: "Inter", serif;
+        font-weight: 700;
+        border-radius: 1em;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+    }
+    
+    /*Dictionary results box*/
+    #result {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 80vw;
+        height: 40vh;
+        max-width: 500px;
+        /* Maximum width */
+        max-height: 600px;
+        /* Maximum height */
+        background-color: rgb(255, 255, 255);
+        border:#0e51d638 2px solid;
+        border-radius: 0.8em;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+    }
+    
+    /*definiton title font*/
+    #wrdTitle {
+        color: #1e2b46;
+        text-transform: uppercase;
+        font-size: 1.7em;
+        font-weight: 600;
+        margin: 1.5em 1em 0em 1.1em;
+        
+        
+    }
+    /* word definiton!*/
+    #wrdDef {
+        color: rgb(41, 41, 41);
+        max-width: 80%;
+        text-align: left;
+        text-transform: capitalize;
+        line-height: 1.4em;
+        margin: 1em 2em;
+    }
+    /* add period to definition ending!*/
+    #wrdDef:after {
+        content: ".";
+     }
+    /*definition:*/
+    #wrdDef > span {
+        color: #2051b3;
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 2em;
+    }
+    
+    /*footer*/
+    footer {
+        height: 20vh;
+        background-color: #3d48ac;
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+    }
+    #footerContainer {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* nav links */
+    #footerNav {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        align-items: left;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    #footerNav > a {
+        font-family: "Inter", serif;
+        font-weight: 700;
+        font-size: 0.7em;
+        color: rgb(255, 255, 255);
+        letter-spacing: 0.2em;
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.44);
+        text-decoration: none;
+    }
+    
+    #socials {
+        width: 40%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .socialImg {
+        width:  2.4em;
+        height: 2.4em;
+    }
+}

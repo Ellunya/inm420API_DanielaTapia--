@@ -1,0 +1,16 @@
+{
+  "name": "inm420api_danielatapia",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server --baseDir=\"public\""
+  },
+  "author": "Daniela Tapia",
+  "license": "ISC",
+  "description": "",
+  "keywords": [],
+  "type": "commonjs",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

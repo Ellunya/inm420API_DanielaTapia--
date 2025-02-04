@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css reset-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css">
+    <!--external css-->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Voces&display=swap" rel="stylesheet">
+
+    <title>Rest API Daniela Tapia</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="/assets/images/book-logo-blk-1.png">
+            <img src="/assets/images/BurgerMenu.png" id="burgerMenu">
+            <p> Word<Span>Wise</Span> </p>
+        </div>
+        <nav>
+            <a>Info</a>          
+            <a>Contact Us</a>
+            <a>Dictionary List</a>
+            <a>Word of the day</a>
+        </nav>
+    </header>
+    <!--hero section-->
+    <section id="hero">
+        <article>
+            <h1>Your Ultimate Dictionary for Definitions</h1>
+            <p id="herotxt">Search thousands of words, and definitions in one place. Expand your vocabulary effortlessly.</p>
+            <img>
+        </article>
+    </section>
+    <main> <!--Main content aka forms and about the merriam webster dictionary-->
+        <section id="form">
+            <div id="apiContainer">
+                <form id="wordForm">
+                    <label for="text"> Enter your word here</label>
+                    <input type="text"name="text" placeholder="Start Typing Any Word!" id="wordInput">
+                    <input type="submit" value="Search" id="submitBtn">
+                </form>
+                <div id="result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <nav id="footerNav">
+                <a href="#">Info</a>          
+                <a href="#">Contact Us</a>
+                <a href="#">Dictionary List</a>
+                <a href="#">Word of the day</a>
+            </nav>  
+            <div id="socials">
+                <a><img class="socialImg" src="/assets/images/twitter-icon.png"></a>
+                <a><img class="socialImg"  src="/assets/images/facebook-icon.png"></a>
+                <a><img class="socialImg"  src="/assets/images/wiki-icon.png"></a>
+                <a><img class="socialImg" src="/assets/images/nyt-icon.png"></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
