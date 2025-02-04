@@ -30,7 +30,7 @@ header {
 
 }
 
-header > div {
+header>div {
     width: 89%;
     height: auto;
     display: flex;
@@ -38,7 +38,7 @@ header > div {
 }
 
 /*text logo font Wordwise*/
-header > div > p {
+header>div>p {
     width: 60%;
     font-size: 3.3vh;
     font-weight: bold;
@@ -48,7 +48,7 @@ header > div > p {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
 }
 
-header > div>p > span {
+header>div>p>span {
     color: #2051b3;
 }
 
@@ -58,6 +58,11 @@ header>nav {
     justify-content: space-between;
     gap: 4vw;
 }
+/* nav link colours*/
+ header>nav>a {
+    text-decoration: none;
+    color: rgb(36, 37, 104);
+ }
 
 /* Fake burger menu for mobile*/
 #burgerMenu {
@@ -66,10 +71,12 @@ header>nav {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 /*dont display web logo*/
 #logo {
     display: none;
 }
+
 #hero {
     height: 50vh;
     background-image: url(../images/hero-bg-2.png);
@@ -109,12 +116,6 @@ header>nav {
 
 
 
-
-
-
-
-
-
 /*API part*/
 #apiContainer {
     display: flex;
@@ -122,6 +123,7 @@ header>nav {
     align-items: center;
     flex-wrap: wrap;
 }
+
 /* the small form section*/
 #wordForm {
     padding: 2em;
@@ -132,37 +134,41 @@ header>nav {
     max-height: 600px;
     /* Maximum height */
     text-align: center;
-    
+
 }
+
 /* label text*/
 label {
-display: none;
+    display: none;
 }
+
 /*text input*/
 #wordInput {
     width: 85%;
     max-width: 500px;
-    height:50%;  
+    height: 50%;
     border-radius: 2em;
     padding: 0% 10% 0 5%;
     border: 2px solid #4b87ff;
     box-shadow: rgba(150, 153, 155, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-    
+
 }
+
 /*inline text*/
 input::placeholder {
     font-size: 120%;
     text-align: left;
     font-weight: 600;
-    color:#5071b4;
+    color: #5071b4;
     background-image: url(../images/search-icon.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom 0% left 100%;
-    
+
 }
+
 /*submit button*/
-#submitBtn{
+#submitBtn {
     width: 6em;
     height: 50%;
     background-color: #2051b3;
@@ -190,7 +196,7 @@ input::placeholder {
     max-height: 600px;
     /* Maximum height */
     background-color: rgb(255, 255, 255);
-    border:#0e51d638 2px solid;
+    border: #0e51d638 2px solid;
     border-radius: 0.8em;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
@@ -203,9 +209,10 @@ input::placeholder {
     font-size: 1.7em;
     font-weight: 600;
     margin: 1.5em 1em 0em 1.1em;
-    
-    
+
+
 }
+
 /* word definiton!*/
 #wrdDef {
     color: rgb(41, 41, 41);
@@ -215,12 +222,14 @@ input::placeholder {
     line-height: 1.4em;
     margin: 1em 2em;
 }
+
 /* add period to definition ending!*/
 #wrdDef:after {
     content: ".";
- }
+}
+
 /*definition:*/
-#wrdDef > span {
+#wrdDef>span {
     color: #2051b3;
     font-size: 1.5em;
     font-weight: 500;
@@ -235,6 +244,7 @@ footer {
     justify-content: center;
     padding-top: 1em;
 }
+
 #footerContainer {
     width: 100%;
     height: 90%;
@@ -254,9 +264,9 @@ footer {
     gap: 1em;
 }
 
-#footerNav > a {
+#footerNav>a {
     font-family: "Inter", serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 0.7em;
     color: rgb(255, 255, 255);
     letter-spacing: 0.2em;
@@ -274,56 +284,67 @@ footer {
 }
 
 .socialImg {
-    width:  2.4em;
+    width: 2.4em;
     height: 2.4em;
 }
 
+#footer2 {
+    height: 2vh;
+    background-color:#3842a3;
+    font-size: 0.6em;
+    text-decoration: none;
+    color: white;
+}
+
 @media only screen and (min-width: 768px) {
-    
+
     /*book logo*/
     #logo {
         display: flex;
         width: 3.4em;
         height: 2em;
-    }      
-    header > div {
+    }
+
+    header>div {
         width: 60%;
     }
+
     /*text logo*/
-    header > div > p {
-        margin: 0 0 0 1em ;
+    header>div>p {
+        margin: 0 0 0 1em;
     }
-    
+
     /* desktop nav*/
-    header > nav {
+    header>nav {
         display: flex;
         justify-content: space-between;
         gap: 2vw;
         font-weight: 700;
     }
-    
+
     /* Fake burger menu for mobile*/
     #burgerMenu {
         display: none;
     }
-    
-    
+
+
     #hero {
         height: 80vh;
     }
-    
+
     /*API part*/
     #apiContainer {
         flex-direction: column;
         padding-top: 10em;
     }
+
     /* the small form section*/
     #wordForm {
         padding: 2em;
         width: 70vw;
         height: 10vh;
         /* Maximum width */
-        max-width: 490px;  
+        max-width: 490px;
     }
 
     #fakead {
@@ -339,12 +360,14 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
     }
+
     /* label text*/
     label {
-    display: none;
+        display: none;
     }
+
     /*text input*/
-    
+
     /*definiton title font*/
     #wrdTitle {
         color: #1e2b46;
@@ -352,25 +375,10 @@ footer {
         font-size: 1.7em;
         font-weight: 600;
         margin: 1.5em 1em 0em 1.1em;
-        
-        
-    }    
-    /*footer*/
-    footer {
-        height: 20vh;
-        background-color: #3d48ac;
-        display: flex;
-        justify-content: center;
-        padding-top: 1em;
+
+
     }
-    #footerContainer {
-        width: 100%;
-        height: 90%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
+
     /* nav links */
     #footerNav {
         display: flex;
@@ -381,28 +389,11 @@ footer {
         flex-direction: column;
         gap: 1em;
     }
-    
-    #footerNav > a {
-        font-family: "Inter", serif;
-        font-weight: 700;
-        font-size: 0.7em;
-        color: rgb(255, 255, 255);
-        letter-spacing: 0.2em;
-        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.44);
-        text-decoration: none;
-    }
-    
+
     #socials {
-        width: 40%;
-        height: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        width: 10%;
+        padding: 0% 0% 0 30%;
     }
-    
-    .socialImg {
-        width:  2.4em;
-        height: 2.4em;
-    }
+
+
 }
